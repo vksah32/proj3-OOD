@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<BorderPane fx:controller="proj3RemondiSahZhouSkrynnyk.Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@Main.css"/>
+    </stylesheets>
+    <center >
+        <HBox styleClass="btnHbox" centerShape="true" >
+            <children>
+                <Button  styleClass="btnPlay" text="Play Scale" onAction="#handlePlayButtonAction" >
+                    <HBox.margin>
+                        <Insets right="5.0" />
+                    </HBox.margin>
+                </Button>
+                <Button styleClass="btnStop" text="Stop Playing" scaleShape="true" onAction="#handleStopButtonAction" />
+            </children>
+        </HBox>
+    </center>
+    <top>
+        <MenuBar styleClass="menuBar">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Exit" onAction="#handleExit"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

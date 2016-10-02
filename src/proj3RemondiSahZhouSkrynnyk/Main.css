@@ -1,0 +1,19 @@
+.menuBar{
+    -fx-alignment: top-left;
+}
+
+.btnHbox{
+    -fx-alignment:center;
+    -fx-margin: auto;
+    margin: auto;
+}
+
+.btnPlay{
+    -fx-alignment:center;
+    -fx-base: "#008000";
+}
+
+.btnStop{
+    -fx-alignment:center;
+    -fx-base: "#FF0000";
+}
